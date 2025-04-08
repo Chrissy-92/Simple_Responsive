@@ -1,0 +1,61 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  --brand_firefighter: #cc212a;
+}
+
+.main_red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.title_red {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--brand_firefighter);
+  width: 15ch;
+}
+
+.footer_red {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-top: solid var(--brand_firefighter) 3px;
+}
+
+.logo_red {
+  background-color: var(--brand_firefighter);
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(-85%);
+}
+
+@media screen and (min-width: 768px) {
+    .footer_red {
+        box-sizing: border-box;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-left: 45px;
+        padding-right: 55px;
+    }
+    
+    .logo_red {
+        transform: none;
+    }
+}
